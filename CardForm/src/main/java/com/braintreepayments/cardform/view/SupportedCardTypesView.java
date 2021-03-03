@@ -75,7 +75,7 @@ public class SupportedCardTypesView extends TextView {
         SpannableString spannableString = new SpannableString(new String(new char[mSupportedCardTypes.size()]));
         PaddedImageSpan span;
         for (int i = 0; i < mSupportedCardTypes.size(); i++) {
-            span = new PaddedImageSpan(getContext(), mSupportedCardTypes.get(i).getFrontResource());
+            span = new PaddedImageSpan(getContext(), mSupportedCardTypes.get(i).getFrontResource(), 16);
             span.setDisabled(!Arrays.asList(cardTypes).contains(mSupportedCardTypes.get(i)));
             spannableString.setSpan(span, i, i + 1, SpannableString.SPAN_EXCLUSIVE_EXCLUSIVE);
         }

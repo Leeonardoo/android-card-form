@@ -3,6 +3,7 @@ package com.braintreepayments.cardform.view;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.text.style.ImageSpan;
 
@@ -11,13 +12,15 @@ import com.braintreepayments.cardform.utils.ViewUtils;
 public class PaddedImageSpan extends ImageSpan {
 
     private boolean mDisabled;
-    private int mResourceId;
-    private int mPadding;
+    private final int mResourceId;
+    private final int mPadding;
+    private final int mMarginTop;
 
-    public PaddedImageSpan(Context context, int resourceId) {
+    public PaddedImageSpan(Context context, int resourceId, int marginTop) {
         super(context, resourceId);
         mResourceId = resourceId;
         mPadding = ViewUtils.dp2px(context, 8);
+        mMarginTop = ViewUtils.dp2px(context, marginTop);
     }
 
     public void setDisabled(boolean disabled) {
@@ -46,7 +49,9 @@ public class PaddedImageSpan extends ImageSpan {
     @Override
     public Drawable getDrawable() {
         Drawable drawable = super.getDrawable();
-
+        Rect newBounds = drawable.getBounds();
+        newBounds.offset(0, mMarginTop);
+        drawable.mutate().setBounds(newBounds);
         if (mDisabled) {
             drawable.mutate().setAlpha(80);
         }
