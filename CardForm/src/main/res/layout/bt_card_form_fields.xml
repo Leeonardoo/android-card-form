@@ -10,7 +10,6 @@
         <ImageView
             android:id="@+id/bt_card_form_cardholder_name_icon"
             style="@style/bt_card_form_icon"
-            app:layout_constraintBottom_toBottomOf="@id/bt_card_form_cardholder_name_input_layout"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/bt_card_form_cardholder_name_input_layout"
             tools:ignore="ContentDescription"
@@ -43,7 +42,6 @@
         <ImageView
             android:id="@+id/bt_card_form_card_number_icon"
             style="@style/bt_card_form_icon"
-            app:layout_constraintBottom_toBottomOf="@id/bt_card_form_card_number_icon_input_layout"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/bt_card_form_card_number_icon_input_layout"
             tools:ignore="ContentDescription" />
@@ -63,7 +61,7 @@
                 android:id="@+id/bt_card_form_card_number"
                 style="@style/bt_card_form_field"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:hint="@string/bt_form_hint_card_number"
                 android:inputType="number" />
 
@@ -119,7 +117,6 @@
         <ImageView
             android:id="@+id/bt_card_form_postal_code_icon"
             style="@style/bt_card_form_icon"
-            app:layout_constraintBottom_toBottomOf="@id/bt_card_form_postal_code_input_layout"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/bt_card_form_postal_code_input_layout"
             tools:ignore="ContentDescription" />
@@ -151,7 +148,6 @@
         <ImageView
             android:id="@+id/bt_card_form_mobile_number_icon"
             style="@style/bt_card_form_icon"
-            app:layout_constraintBottom_toBottomOf="@id/bt_card_form_country_code_input_layout"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/bt_card_form_country_code_input_layout"
             tools:ignore="ContentDescription" />
