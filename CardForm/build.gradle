@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'com.github.leeonardoo'
-version = '5.1.0'
+version = '5.1.1-SNAPSHOT'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
@@ -80,7 +80,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.github.leeonardoo'
                 artifactId = 'card-form'
-                version = '5.1.0'
+                version = '5.1.1-SNAPSHOT'
             }
         }
     }
