@@ -3,35 +3,25 @@
     <style name="bt_card_form_icon">
         <item name="android:layout_width">32dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_gravity">top|center_horizontal</item>
-        <item name="android:paddingTop">50dp</item>
-        <item name="android:paddingBottom">@dimen/bt_margin</item>
+        <item name="android:layout_marginStart">18dp</item>
     </style>
 
     <style name="bt_field_container">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:orientation">horizontal</item>
-        <item name="android:baselineAligned">false</item>
-    </style>
-
-    <style name="bt_base_textview">
-        <item name="android:textSize">@dimen/bt_input_text_size</item>
-        <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
     <style name="bt_text_input_layout">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginStart">18dp</item>
+        <item name="android:layout_marginEnd">18dp</item>
         <item name="android:accessibilityLiveRegion" tools:targetApi="kitkat">polite</item>
     </style>
 
-    <style name="bt_card_form_field" parent="bt_base_textview">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">60dp</item>
-        <item name="android:paddingTop">@dimen/bt_margin</item>
+    <style name="bt_card_form_field">
         <item name="android:textColorHint">@color/bt_light_gray</item>
+        <item name="maxLines">1</item>
+        <item name="singleLine">true</item>
         <item name="android:textCursorDrawable" tools:ignore="NewApi">@null</item>
     </style>
 

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="bt_margin_without_icon">50dp</dimen>
     <dimen name="bt_margin">8dp</dimen>
     <dimen name="bt_edit_text_icon_padding">24dp</dimen>
     <dimen name="bt_no_edit_text_icon_padding">52dp</dimen>
