@@ -31,6 +31,7 @@
                 style="@style/bt_card_form_field"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textCapWords"
                 android:hint="@string/bt_form_hint_cardholder_name" />
 
         </com.google.android.material.textfield.TextInputLayout>
